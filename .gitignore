@@ -1,0 +1,22 @@
+# Compiled binaries and build artifacts
+/target/
+
+# Cargo lock file
+# Keep Cargo.lock for applications; ignore for libraries if you prefer
+# Uncomment the next line if this is a library crate
+# Cargo.lock
+
+# Backup files
+**/*.rs.bk
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Rust Analyzer
+.rust-analyzer/
