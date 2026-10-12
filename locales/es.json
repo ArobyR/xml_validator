@@ -1,0 +1,59 @@
+{
+  "_name": "Español",
+
+  "app.title": "Validador de esquemas XML",
+  "app.subtitle": "Valida documentos XML frente a esquemas XSD",
+  "language": "Idioma",
+
+  "file.xml": "Documento XML",
+  "file.xsd": "Esquema XSD",
+  "file.none": "Ningún archivo seleccionado",
+  "file.browse": "Examinar...",
+
+  "button.validate": "Validar",
+  "button.validating": "Validando...",
+  "button.redetect": "Redetectar xmllint",
+  "button.locate_xmllint": "Ubicar xmllint...",
+
+  "status.idle": "Seleccione un documento XML y su esquema XSD, y pulse Validar.",
+  "status.validating": "Validación en curso...",
+
+  "error.select_xml": "Seleccione un documento XML antes de validar.",
+  "error.select_xsd": "Seleccione un esquema XSD antes de validar.",
+  "error.xmllint_missing": "No se encontró xmllint. Instálelo y vuelva a intentarlo.",
+
+  "result.success": "Validación correcta",
+  "result.success_detail": "El documento XML cumple íntegramente con el esquema XSD.",
+
+  "phase.schema_violation.title": "El XML no cumple con el esquema",
+  "phase.schema_violation.explanation": "El XML está bien formado y el esquema se compiló correctamente. Los errores de abajo son infracciones del esquema.",
+  "phase.schema_compile_error.title": "El esquema XSD no se pudo compilar",
+  "phase.schema_compile_error.explanation": "El propio esquema contiene errores, por lo que el XML no llegó a validarse. Corrija primero el XSD.",
+  "phase.schema_not_found.title": "No se encontró el esquema XSD",
+  "phase.schema_not_found.explanation": "El archivo del esquema no se pudo abrir o localizar. Compruebe la ruta del XSD.",
+  "phase.malformed_xml.title": "El XML no está bien formado",
+  "phase.malformed_xml.explanation": "El documento no es XML bien formado, por lo que no se llegó a validar contra el esquema. Esto no dice nada sobre el XSD.",
+  "phase.environment.title": "No se pudo ejecutar la validación",
+  "phase.environment.explanation": "El problema está en el entorno, no en sus archivos.",
+
+  "detail.timeout": "El proceso de validación superó los {s} segundos y fue terminado.",
+  "detail.spawn": "No se pudo ejecutar xmllint: {error}",
+  "detail.thread_lost": "El hilo de validación terminó inesperadamente.",
+  "detail.technical": "Detalles técnicos",
+
+  "report.errors": "Errores encontrados: {n}",
+  "report.no_errors": "Sin errores. Validado en {s} s.",
+  "report.duration": "Duración: {s} s",
+  "report.exit_code": "Código de salida de xmllint: {code}",
+
+  "env.title": "xmllint no encontrado",
+  "env.explanation": "Esta aplicación utiliza xmllint (libxml2) para validar los documentos. Instálelo con su gestor de paquetes y pulse Redetectar.",
+  "env.macos": "macOS:  brew install libxml2",
+  "env.macos_note": "Homebrew instala libxml2 de forma «keg-only». Si la detección sigue fallando, use «Ubicar xmllint...» o añada /opt/homebrew/bin al PATH. macOS también incluye /usr/bin/xmllint.",
+  "env.debian": "Debian/Ubuntu:  sudo apt install libxml2-utils",
+  "env.fedora": "Fedora/RHEL:  sudo dnf install libxml2",
+  "env.windows": "Windows (MSYS2):  pacman -S mingw-w64-x86_64-libxml2",
+
+  "footer.xmllint": "xmllint: {path}",
+  "footer.xmllint_none": "xmllint: no encontrado"
+}

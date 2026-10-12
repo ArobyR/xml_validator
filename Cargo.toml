@@ -1,8 +1,10 @@
 [package]
 name = "validador_xml_xsd"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+description = "Desktop application to validate XML documents against XSD schemas using xmllint"
 
 [dependencies]
 eframe = { version = "0.33", features = ["default"] }
 rfd = "0.17"
+serde_json = "1"

@@ -1,0 +1,59 @@
+{
+  "_name": "English",
+
+  "app.title": "XML Schema Validator",
+  "app.subtitle": "Validate XML documents against XSD schemas",
+  "language": "Language",
+
+  "file.xml": "XML document",
+  "file.xsd": "XSD schema",
+  "file.none": "No file selected",
+  "file.browse": "Browse...",
+
+  "button.validate": "Validate",
+  "button.validating": "Validating...",
+  "button.redetect": "Re-detect xmllint",
+  "button.locate_xmllint": "Locate xmllint...",
+
+  "status.idle": "Select an XML document and its XSD schema, then click Validate.",
+  "status.validating": "Validation in progress...",
+
+  "error.select_xml": "Select an XML document before validating.",
+  "error.select_xsd": "Select an XSD schema before validating.",
+  "error.xmllint_missing": "xmllint could not be found. Install it and try again.",
+
+  "result.success": "Validation successful",
+  "result.success_detail": "The XML document fully complies with the XSD schema.",
+
+  "phase.schema_violation.title": "The XML does not comply with the schema",
+  "phase.schema_violation.explanation": "The XML is well formed and the schema compiled successfully. The errors below are schema violations.",
+  "phase.schema_compile_error.title": "The XSD schema could not be compiled",
+  "phase.schema_compile_error.explanation": "The schema itself contains errors, so the XML was never validated. Fix the XSD first.",
+  "phase.schema_not_found.title": "The XSD schema could not be found",
+  "phase.schema_not_found.explanation": "The schema file could not be opened or located. Check the XSD path.",
+  "phase.malformed_xml.title": "The XML is not well formed",
+  "phase.malformed_xml.explanation": "The document is not well-formed XML, so it was never validated against the schema. This says nothing about the XSD.",
+  "phase.environment.title": "The validation could not run",
+  "phase.environment.explanation": "The problem is with the environment, not with your files.",
+
+  "detail.timeout": "The validation process exceeded {s} seconds and was terminated.",
+  "detail.spawn": "Could not run xmllint: {error}",
+  "detail.thread_lost": "The validation thread terminated unexpectedly.",
+  "detail.technical": "Technical details",
+
+  "report.errors": "Errors found: {n}",
+  "report.no_errors": "No errors found. Validated in {s} s.",
+  "report.duration": "Duration: {s} s",
+  "report.exit_code": "xmllint exit code: {code}",
+
+  "env.title": "xmllint not found",
+  "env.explanation": "This application relies on xmllint (libxml2) to validate documents. Install it with your package manager, then click Re-detect.",
+  "env.macos": "macOS:  brew install libxml2",
+  "env.macos_note": "Homebrew installs libxml2 as keg-only. If detection still fails, use \"Locate xmllint...\" or add /opt/homebrew/bin to your PATH. macOS also ships /usr/bin/xmllint.",
+  "env.debian": "Debian/Ubuntu:  sudo apt install libxml2-utils",
+  "env.fedora": "Fedora/RHEL:  sudo dnf install libxml2",
+  "env.windows": "Windows (MSYS2):  pacman -S mingw-w64-x86_64-libxml2",
+
+  "footer.xmllint": "xmllint: {path}",
+  "footer.xmllint_none": "xmllint: not found"
+}
