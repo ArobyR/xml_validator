@@ -3,6 +3,7 @@ name = "validador_xml_xsd"
 version = "0.2.0"
 edition = "2021"
 description = "Desktop application to validate XML documents against XSD schemas using xmllint"
+license = "GPL-3.0-only"
 
 [dependencies]
 eframe = { version = "0.33", features = ["default"] }

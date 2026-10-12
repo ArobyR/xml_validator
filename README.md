@@ -86,3 +86,8 @@ missing from a translation fall back to English.
 
 The GitHub Actions workflow (`.github/workflows/ci.yml`) runs `cargo fmt`,
 `cargo clippy -D warnings`, and `cargo test` on every push and pull request.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See the
+[LICENSE](LICENSE) file for the full text.
